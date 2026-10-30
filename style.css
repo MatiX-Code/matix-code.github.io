@@ -92,11 +92,10 @@ body {
 }
 
 .tab {
-  background-color: #00c6e0;
+  background-color: #42a5f5;
   color: #fef8ec;
   padding: 8px 16px;
   font-size: 13px;
-  border-top: 2px solid #007acc; /* Couleur bleue VS Code */
   border-radius: 5px;
 }
 
@@ -130,7 +129,7 @@ a {
 /* Status Bar */
 .status-bar {
   height: 22px;
-  background-color: #007acc;
+  background-color: #42a5f5;
   color: white;
   font-size: 12px;
   display: flex;
