@@ -9,16 +9,16 @@
 </head>
 <body>
 
-  <div class="vscode-container">
+  <section class="vscode-container">
     
     <!-- 1. Activity Bar (Barre tout à gauche) -->
-    <div class="activity-bar">
-      <div class="icon active">📁</div>
-      <div class="icon">⚙️</div>
-    </div>
+    <article class="activity-bar">
+      <span class="icon active">📁</span>
+      <span class="icon">⚙️</span>
+    </article>
 
     <!-- 2. Sidebar (Explorateur de fichiers) -->
-    <div class="sidebar">
+    <section class="sidebar">
       <p class="sidebar-title">EXPLORATEUR</p>
       <ul class="file-tree">
         <li class="file-item active" data-target="about">📄 README.md</li>
@@ -26,56 +26,56 @@
         <li class="file-item" data-target="projects">📱 projects.js</li>
         <li class="file-item" data-target="contact">✉️ contact.html</li>
       </ul>
-    </div>
+    </section>
 
     <!-- 3. Editor (Zone d'affichage du code/contenu) -->
-    <div class="editor">
+    <section class="editor">
       
       <!-- Onglets en haut -->
-      <div class="tabs">
-        <div class="tab active" id="current-tab-title">README.md</div>
-      </div>
+      <section class="tabs">
+        <span class="tab active" id="current-tab-title">README.md</span>
+      </section>
 
       <!-- Contenu des fichiers -->
-      <div class="content-area">
+      <section class="content-area">
         
         <!-- Fichier 1 : README.md -->
-        <div class="file-content active" id="about">
+        <article class="file-content active" id="about">
           <h1># Mathieu - Développeur Web & Mobile</h1>
           <p>> Actuellement en formation à l'ADRAR</p>
           <p>Passionné par la création d'applications web modernes et d'interfaces mobiles fluides.</p>
-        </div>
+        </article>
 
         <!-- Fichier 2 : skills.json -->
-        <div class="file-content" id="skills">
+        <article class="file-content" id="skills">
           <pre><code>{
-  "frontEnd": ["HTML5", "CSS3", "JavaScript"],
-  "backEnd": ["Node.js", "PHP", "SQL"],
-  "tools": ["Git", "GitHub", "VS Code", "Figma","Balsamiq","Docker","Laragon"]
-}</code></pre>
-        </div>
+            "frontEnd": ["HTML5", "CSS3", "JavaScript"],
+            "backEnd": ["Node.js", "PHP", "SQL"],
+            "tools": ["Git", "GitHub", "VS Code", "Figma","Balsamiq","Docker","Laragon"]
+            }</code></pre>
+        </article>
 
         <!-- Fichier 3 : projects.js -->
-        <div class="file-content" id="projects">
+        <article class="file-content" id="projects">
           <h2>// Mes Projets de Formation</h2>
-          <div class="project-card">
+          <section class="project-card">
             <h3>Projet Académique : "Site Vitrine Fanny EGEA";</h3>
             <p>Projet réalisé tout au long de ma formation pour une artiste</p>
             <a href="https://github.com/MatiX-Code/projet_dev_fil_rouge.git" target="_blank">Voir sur GitHub</a>
-          </div>
-        </div>
+          </section>
+        </article>
 
         <!-- Fichier 4 : contact.html -->
-        <div class="file-content" id="contact">
+        <article class="file-content" id="contact">
           <h2>&lt;!-- Me Contacter --&gt;</h2>
           <p>Email: mathieu.papaix@gmail.com</p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/mathieu-papaix/">linkedin.com/in/mathieu-papaix</a></p>
-        </div>
+        </article>
 
-      </div>
-    </div>
+      </section>
+    </section>
 
-  </div>
+  </section>
 
   <!-- Barre de statut tout en bas -->
   <footer class="status-bar">
