@@ -159,3 +159,52 @@ p{
 .project-card{
     text-align: center;
 }
+
+/* ==========================================
+   MEDIA QUERIES (Responsive pour Mobile)
+   ========================================== */
+
+@media (max-width: 768px) {
+  /* On passe le conteneur en colonne */
+  .vscode-container {
+    flex-direction: column;
+  }
+
+  /* On cache la barre d'icônes à gauche sur mobile */
+  .activity-bar {
+    display: none;
+  }
+
+  /* La sidebar se transforme en barre de menu horizontale en haut */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #000000;
+    padding: 8px;
+  }
+
+  .sidebar-title {
+    display: none; /* On masque le titre "EXPLORATEUR" pour gagner de la place */
+  }
+
+  /* On aligne les fichiers en ligne (flex row) pour faire office d'onglets de navigation mobiles */
+  .file-tree {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto; /* Permet de swiper si l'écran est très petit */
+    padding-bottom: 4px;
+  }
+
+  .file-item {
+    white-space: nowrap;
+    background-color: #f0e9d6;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  /* Ajustements de la zone de contenu sur petit écran */
+  .content-area {
+    padding: 10px;
+  }
+}
