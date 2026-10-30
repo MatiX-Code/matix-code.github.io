@@ -3,10 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon CV en ligne</title>
+  <title>CV - Développeur Web & Mobile - Mathieu PAPAÏX</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-      <h1>Bonjour et bienvenue</h1>
-  <p>Ceci est ma première page web.</p>
+
+  <div class="vscode-container">
+    
+    <!-- 1. Activity Bar (Barre tout à gauche) -->
+    <div class="activity-bar">
+      <div class="icon active">📁</div>
+      <div class="icon">⚙️</div>
+    </div>
+
+    <!-- 2. Sidebar (Explorateur de fichiers) -->
+    <div class="sidebar">
+      <p class="sidebar-title">EXPLORATEUR</p>
+      <ul class="file-tree">
+        <li class="file-item active" data-target="about">📄 README.md</li>
+        <li class="file-item" data-target="skills">⚡ skills.json</li>
+        <li class="file-item" data-target="projects">📱 projects.js</li>
+        <li class="file-item" data-target="contact">✉️ contact.html</li>
+      </ul>
+    </div>
+
+    <!-- 3. Editor (Zone d'affichage du code/contenu) -->
+    <div class="editor">
+      
+      <!-- Onglets en haut -->
+      <div class="tabs">
+        <div class="tab active" id="current-tab-title">README.md</div>
+      </div>
+
+      <!-- Contenu des fichiers -->
+      <div class="content-area">
+        
+        <!-- Fichier 1 : README.md -->
+        <div class="file-content active" id="about">
+          <h1># Mathieu - Développeur Web & Mobile</h1>
+          <p>> Actuellement en formation à l'ADRAR</p>
+          <p>Passionné par la création d'applications web modernes et d'interfaces mobiles fluides.</p>
+        </div>
+
+        <!-- Fichier 2 : skills.json -->
+        <div class="file-content" id="skills">
+          <pre><code>{
+  "frontEnd": ["HTML5", "CSS3", "JavaScript"],
+  "backEnd": ["Node.js", "PHP", "SQL"],
+  "tools": ["Git", "GitHub", "VS Code", "Figma","Balsamiq","Docker","Laragon"]
+}</code></pre>
+        </div>
+
+        <!-- Fichier 3 : projects.js -->
+        <div class="file-content" id="projects">
+          <h2>// Mes Projets de Formation</h2>
+          <div class="project-card">
+            <h3>Projet Académique : "Site Vitrine Fanny EGEA";</h3>
+            <p>Projet réalisé tout au long de ma formation pour une artiste</p>
+            <a href="https://github.com/MatiX-Code/projet_dev_fil_rouge.git" target="_blank">Voir sur GitHub</a>
+          </div>
+        </div>
+
+        <!-- Fichier 4 : contact.html -->
+        <div class="file-content" id="contact">
+          <h2>&lt;!-- Me Contacter --&gt;</h2>
+          <p>Email: mathieu.papaix@gmail.com</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/mathieu-papaix/">linkedin.com/in/mathieu-papaix</a></p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Barre de statut tout en bas -->
+  <footer class="status-bar">
+    <span>Main*</span>
+    <span>0 Errors, 0 Warnings</span>
+    <span>UTF-8</span>
+    <span>Prêt pour un stage / alternance</span>
+  </footer>
+
 </body>
 </html>
