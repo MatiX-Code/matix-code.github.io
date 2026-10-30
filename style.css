@@ -147,6 +147,7 @@ h1, h2, h3{
 p{
     margin-bottom: 20px;
     color: #0095a8;
+    text-align: center;
 }
 .date{
     text-align: center;
