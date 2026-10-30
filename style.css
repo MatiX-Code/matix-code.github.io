@@ -143,6 +143,11 @@ h1, h2, h3{
     text-align: center;
     color: #ec6100;
 }
+h4{    
+  margin-bottom: 20px;
+  text-align: center;
+  color :#ff5792;
+}
 p{
     margin-bottom: 20px;
     color: #0095a8;
@@ -152,12 +157,18 @@ p{
     text-align: center;
 }
 .exp{
-    border: #c4e7eb 1px solid;
+    border: #42a5f5 1px solid;
     padding: 10px;
     margin-bottom: 15px;
 }
 .project-card{
     text-align: center;
+}
+img {
+  max-width: 100%; /* L'image ne dépassera jamais la largeur de son conteneur */
+  height: auto;    /* Conserve les proportions sans déformer l'image */
+  display: block;  /* Évite les espaces vides indésirables en bas des images */
+  margin: 0 auto;  /* Centre l'image horizontalement si besoin */
 }
 
 /* ==========================================
@@ -207,4 +218,12 @@ p{
   .content-area {
     padding: 10px;
   }
+
+  /* Réduction spécifique pour les images sur smartphone */
+  img {
+    max-width: 80%; /* Ajuste le pourcentage selon la taille voulue (ex: 60%, 80%, etc.) */
+    max-height: 200px; /* Limite aussi la hauteur si nécessaire */
+    object-fit: contain; /* Garde le ratio complet sans rogner */
+  }
 }
+
