@@ -136,3 +136,11 @@ a {
   justify-content: space-between;
   padding: 0 10px;
 }
+
+h1, h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+p{
+    margin-bottom: 20px;
+}
